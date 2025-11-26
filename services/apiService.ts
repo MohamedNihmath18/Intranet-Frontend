@@ -200,7 +200,7 @@
 
 import { User, Announcement, DocumentItem, LinkItem, BannerItem, AuditLog, OnCallRoster, Department } from '../types';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://intranet-backend-0883.onrender.com/api';
 
 const getHeaders = () => {
   const userStr = localStorage.getItem('mahsa_current_user');
