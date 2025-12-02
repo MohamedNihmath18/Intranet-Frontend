@@ -83,11 +83,11 @@ export const Login: React.FC = () => {
           </button>
         </form>
 
-        <div className="mt-6 text-center text-xs text-slate-400 dark:text-slate-500">
+        {/* <div className="mt-6 text-center text-xs text-slate-400 dark:text-slate-500">
           <p>Demo Credentials:</p>
           <p>Admin: admin / password</p>
           <p>Staff: jdoe / password</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

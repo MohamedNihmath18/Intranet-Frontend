@@ -1,3 +1,6 @@
+ 
+
+
 // export enum UserRole {
 //   ADMIN = 'ADMIN',
 //   STAFF = 'STAFF',
@@ -42,8 +45,9 @@
 //   id: string;
 //   title: string;
 //   url: string;
-//   category: 'Internal' | 'External' | 'Tools' | 'HR';
+//   category: 'Internal' | 'External' | 'Tools' | 'HR' | 'Policies' | 'Forms' | 'Training' | 'IT Support';
 //   description?: string;
+//   icon?: string; // Added optional icon field
 // }
 
 // export interface AuditLog {
@@ -64,12 +68,42 @@
 //   theme: 'Blue' | 'Pink' | 'Red' | 'Green' | 'Purple';
 // }
 
+// export interface OnCallRoster {
+//   id: string;
+//   title: string;
+//   month: string;
+//   fileUrl: string;
+//   fileType: string;
+//   uploadedBy: string;
+//   createdAt: string;
+// }
+
+// export interface DepartmentResource {
+//   id?: string;
+//   _id?: string;
+//   title: string;
+//   type: 'ORG_CHART' | 'ROSTER' | 'MEMO' | 'SOP' | 'FAQ';
+//   url: string;
+//   fileType: string;
+//   uploadedBy: string;
+//   date: string;
+// }
+
+// export interface Department {
+//   id: string;
+//   name: string;
+//   description: string;
+//   icon: string;
+//   resources: DepartmentResource[];
+// }
+
 // export interface AuthState {
 //   user: User | null;
 //   isAuthenticated: boolean;
 //   isLoading: boolean;
 // }
 
+ 
 
 export enum UserRole {
   ADMIN = 'ADMIN',
@@ -138,12 +172,21 @@ export interface BannerItem {
   theme: 'Blue' | 'Pink' | 'Red' | 'Green' | 'Purple';
 }
 
+// export interface OnCallRoster {
+//   id: string;
+//   title: string;
+//   month: string;
+//   fileUrl: string;
+//   fileType: string;
+//   uploadedBy: string;
+//   createdAt: string;
+// }
+
 export interface OnCallRoster {
   id: string;
-  title: string;
-  month: string;
-  fileUrl: string;
-  fileType: string;
+  doctorName: string;
+  specialty: string;
+  date: string; // YYYY-MM-DD
   uploadedBy: string;
   createdAt: string;
 }
